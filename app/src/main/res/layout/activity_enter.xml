@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity"
+    android:padding="16dp"
+    android:background="@color/colorPrimary2">
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:shimmer_animation_duration="5000"
+        app:shimmer_auto_start="true"
+        app:shimmer_color="@color/colorprimary_light"
+        app:shimmer_reverse_animation="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/truck"
+                android:id="@+id/logo"
+                android:layout_marginTop="32dp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/logo"
+                android:textSize="16sp"
+                android:text="@string/app_name"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        android:paddingTop="16dp"
+        android:id="@+id/parent">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="32dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:text="@string/enter_customers"
+                android:id="@+id/customer"
+                style="@style/login_btn"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="64dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:text="@string/enter_employees"
+                android:id="@+id/employee"
+                style="@style/login_btn"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="@string/version"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colordivider2"
+        android:textSize="10dp"
+        android:layout_centerInParent="true"
+       />
+
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">Transport</string>
+    <string name="email">ایمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="rePassword">رمز عبور را تکرار کنید</string>
+    <string name="login">ورود</string>
+    <string name="register">ثبت نام</string>
+    <string name="oldUser">ورود به حساب کاربری </string>
+    <string name="signUp">ثبت نام</string>
+    <string name="logout">خروج</string>
+    <string name="fname">نام </string>
+    <string name="save_edit">ذخیره اطلاعات</string>
+    <string name="lname"> نام خانوادگی</string>
+    <string name="sex">جنسیت</string>
+    <string name="female">خانم</string>
+    <string name="male">آقا</string>
+    <string name="username">شناسه کاربری</string>
+    <string name="enter">سامانه حمل و نقل کالا</string>
+    <string name="enter_customers">ورود مشتریان</string>
+    <string name="enter_employees">ورود کارمندان</string>
+    <string name="version">v 1.0.1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="settings">تنظیمات</string>
+    <string name="map">نقشه</string>
+    <string name="profile">پروفایل</string>
+    <string name="order">سفارش</string>
+
+    <string name="bol">بارنامه</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lipsum">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</string>
+    <string name="title_activity_add_orders">AddOrdersActivity</string>
+    <string name="addOrders">افزودن سفارش</string>
+    <string name="completeOrders">تکمیل سفارش</string>
+    <string name="OrdersHistory">سوابق سفارش</string>
+    <string name="BillOfLading">بارنامه</string>
+    <string name="Fonts">سیستم</string>
+    <string name="clearAll">تنظیمات مجدد</string>
+    <string name="defaultColor">رنگ پیشفرض متن</string>
+    <string name="fontSize">سایز فونت</string>
+    <string name="background_color">رنگ پس زمینه</string>
+    <string name="start_address">آدرس مبدأ :</string>
+    <string name="send">ارسال</string>
+    <string name="province">استان مقصد</string>
+    <string name="end_address">آدرس مقصد :</string>
+    <string name="number">تعداد :</string>
+    <string name="packages">بسته بندی :</string>
+    <string name="contents">محتوا :</string>
+    <string name="dimensions">ابعاد(بر حسب سانتی متر) :</string>
+    <string name="weight">وزن(بر حسب گرم) :</string>
+    <string name="insurance">بیمه :</string>
+     <string name="pickup">دریافت :</string>
+    <string name="deliver">تحویل در محل :</string>
+    <string name="breakable">شکستنی :</string>
+    <string name="phone_number">شماره همراه :</string>
+    <string name="zero_nine">09</string>
+    <string name="total">هزینه :</string>
+    <string name="date">تاریخ :</string>
+    <string name="serial_number">شماره سریال :</string>
+    <string name="serial">شماره سریال</string>
+    <string name="sender">فرستنده :</string>
+    <string name="receiver">گیرنده :</string>
+    <string name="receiver_phone">شماره تماس گیرنده :</string>
+    <string name="sender_signature">امضای فرستنده :</string>
+    <string name="receiver_signature">امضای گیرنده</string>
+    <string name="splash_description">سامانه حمل و نقل ترنسپورت</string>
+    <string name="no_orders">جهت افزودن سفارش دکمه زیر رو لمس کن</string>
+    <string name="send_date">تاریخ ارسال :</string>
+    <string name="receive_date">تاریخ دریافت :</string>
+    <string name="azarbayjan_sharghi">آذربایجان شرقی</string>
+    <string name="azarbayjan_gharbi">آذربایجان غربی</string>
+    <string name="ardebil">اردبیل</string>
+    <string name="esfahan">اصفهان</string>
+    <string name="alborz">البرز</string>
+    <string name="ilam">ایلام</string>
+    <string name="bushehr">بوشهر</string>
+    <string name="tehran">تهران</string>
+    <string name="chaharmahal">چهارمحال و بختیاری</string>
+    <string name="khorasan_jonubi">خراسان جنوبی</string>
+    <string name="khorasan_razavi">خراسان رضوی</string>
+    <string name="khorasan_shomali">خراسان شمالی</string>
+    <string name="khuzestan">خوزستان</string>
+    <string name="zanjan">زنجان</string>
+    <string name="semnan">سمنان</string>
+    <string name="sistan">سیستان و بلوچستان</string>
+    <string name="fars">فارس</string>
+    <string name="ghazvin">قزوین</string>
+    <string name="ghom">قم</string>
+    <string name="kordestan">کردستان</string>
+    <string name="kerman">کرمان</string>
+    <string name="kermanshah">کرمانشاه</string>
+    <string name="kohgiluye">کهگیلویه و بویراحمد</string>
+    <string name="golestan">گلستان</string>
+    <string name="gilan">گیلان</string>
+    <string name="lorestan">لرستان</string>
+    <string name="mazandaran">مازندران</string>
+    <string name="markazi">مرکزی</string>
+    <string name="hormozgan">هرمزگان</string>
+    <string name="hamedan">همدان</string>
+    <string name="yazd">یزد</string>
+    <string name="shahryar">تهران - شهریار</string>
+    <string name="eslamshahr">تهران - اسلامشهر</string>
+    <string name="baharestan">تهران - بهارستان</string>
+    <string name="malard">تهران - ملارد</string>
+    <string name="pakdasht">تهران - پاکدشت</string>
+    <string name="shahre_ghods">تهران - شهر قدس</string>
+    <string name="robat_karim">تهران - رباط کریم</string>
+    <string name="varamin">تهران - ورامین</string>
+    <string name="gharchak">تهران - قرچک</string>
+    <string name="pardis">تهران - پردیس</string>
+    <string name="damavand">تهران - دماوند</string>
+    <string name="pishva">تهران - پیشوا</string>
+    <string name="firoozkooh">تهران - فیروزکوه</string>
+
+
+    <string-array name="test">
+
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+
+
+    </string-array>
+
+    <string-array name="fonts">
+
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

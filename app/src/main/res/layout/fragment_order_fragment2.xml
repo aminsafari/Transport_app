@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.OrderFragment2"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+ <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/shimmer_recycler_view"
+     app:shimmer_demo_child_count="10"
+     app:shimmer_demo_layout="@layout/layout_order_row_shimmer"
+     app:shimmer_demo_layout_manager_type="linear_vertical"
+     app:shimmer_demo_angle="20"
+     />
+
+
+
+
+
+</RelativeLayout>

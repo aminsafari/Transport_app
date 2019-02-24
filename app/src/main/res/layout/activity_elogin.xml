@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EloginActivity"
+    android:padding="16dp"
+    android:background="@color/colorPrimary2">
+
+
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/parent"
+        app:shimmer_animation_duration="5000"
+        app:shimmer_auto_start="true"
+        app:shimmer_color="@color/colorprimary_light"
+        app:shimmer_reverse_animation="true">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/truck"
+                android:id="@+id/logo"
+                android:layout_marginTop="32dp"
+                />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/logo"
+                android:textSize="16sp"
+                android:text="@string/app_name"/>
+
+
+
+
+        </RelativeLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_centerVertical="true"
+        android:paddingTop="16dp"
+        android:id="@+id/parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/usernameIcon"
+                style="@style/login_icon"
+                app:srcCompat="@drawable/ic_person_black_24dp"
+
+                 />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/username"
+                android:hint="@string/username"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                style="@style/login_text"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+
+            <android.support.v7.widget.AppCompatImageView
+
+                android:id="@+id/passwordIcon"
+                app:srcCompat="@drawable/ic_lock_black_24dp"
+                style="@style/login_icon"
+                 />
+
+            <android.support.v7.widget.AppCompatEditText
+
+                android:id="@+id/password"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                style="@style/login_text"
+                 />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="32dp">
+
+
+            <android.support.v7.widget.AppCompatTextView
+
+                android:id="@+id/login"
+                android:text="@string/login"
+                style="@style/login_btn"
+                 />
+
+        </RelativeLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="48dp"
+            android:layout_height="24sp"
+            android:id="@+id/progressbar"
+            style="@style/SpinKitView.ThreeBounce"
+            android:visibility="invisible"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colordivider"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

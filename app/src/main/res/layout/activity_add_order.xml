@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddOrderActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colordivider"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:id="@+id/toolbar"
+                android:background="@color/colorPrimary">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+                    android:tint="@color/coloricons"
+                    android:padding="16dp"
+                    android:id="@+id/back"
+                    android:layout_marginStart="4dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+
+                    />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    app:srcCompat="@drawable/ic_delete_forever_black_24dp"
+                    android:tint="@color/coloricons"
+                    android:padding="16dp"
+                    android:id="@+id/delete"
+                    android:layout_marginStart="4dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:layout_toEndOf="@+id/back"
+                    android:visibility="invisible"
+
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/coloricons"
+                    android:text="@string/completeOrders"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:layout_toStartOf="@+id/save"
+                    android:layout_toEndOf="@+id/delete"
+                    android:layout_marginRight="56dp"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/save"
+                    app:srcCompat="@drawable/ic_save_black_24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="4dp"
+                    android:tint="@color/coloricons"
+                    android:padding="16dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:clickable="true"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colordivider"
+                android:orientation="vertical">
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    app:cardBackgroundColor="@color/colordivider3"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:text="@string/sender"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="8dp"
+                            android:padding="6dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/colorprimary_text"
+                            android:gravity="right|center_vertical"
+                            android:textSize="16sp"
+                            android:id="@+id/senderl"
+
+
+                            />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:padding="16dp"
+                            android:singleLine="true"
+                            android:textStyle="normal"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="80dp"
+                            android:gravity="center_vertical"
+                            android:id="@+id/sender"
+
+
+                            />
+
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    app:cardBackgroundColor="@color/colordivider3"
+                    app:cardCornerRadius="8dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:text="@string/receiver"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="8dp"
+                                android:padding="6dp"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/colorprimary_text"
+                                android:gravity="right|center_vertical"
+                                android:textSize="16sp"
+                                android:id="@+id/receiverl"
+
+
+                                />
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="16dp"
+                                android:singleLine="true"
+                                android:textStyle="normal"
+                                android:textSize="16sp"
+                                android:layout_marginEnd="80dp"
+                                android:gravity="center_vertical"
+                                android:id="@+id/receiver"
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:text="@string/receiver_phone"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="8dp"
+                                android:padding="6dp"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/colorprimary_text"
+                                android:gravity="right|center_vertical"
+                                android:textSize="16sp"
+                                android:id="@+id/receiver_phone_numberl"
+
+
+                                />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/zero_nine"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginTop="14dp"
+                                android:textColor="@color/colorprimary_text"
+                                android:gravity="right|center_vertical"
+                                android:textSize="16sp"
+                                android:id="@+id/zero-nine"/>
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/receiver_phone_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:background="@null"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:layout_marginTop="14dp"
+                                android:paddingLeft="2dp"
+                                android:singleLine="true"
+                                android:textStyle="normal"
+                                android:textSize="16sp"
+                                android:inputType="number"
+                                android:layout_marginEnd="140dp"
+                                android:layout_toRightOf="@+id/zero-nine"/>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    app:cardBackgroundColor="@color/colordivider3"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/send_sig"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:text="@string/sender_signature"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="8dp"
+                                android:padding="6dp"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/colorprimary_text"
+                                android:gravity="right|center_vertical"
+                                android:textSize="16sp"
+                                android:id="@+id/sender_signaturel"
+
+
+                                />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="400dp"
+                            android:layout_height="0.5dp"
+                            android:layout_gravity="center"
+                            android:background="@color/colordivider"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                            <com.github.gcacace.signaturepad.views.SignaturePad
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                app:penColor="@color/colorprimary_text"
+                                app:penMinWidth="4sp"
+                                app:penMaxWidth="8sp"
+                                app:clearOnDoubleClick="true"
+                                android:id="@+id/sender_signature"/>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    app:cardBackgroundColor="@color/colordivider3"
+                    app:cardCornerRadius="8dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="12dp"
+                                android:gravity="right|center_vertical"
+                                android:padding="6dp"
+                                android:textColor="@color/colorprimary_text"
+                                android:textSize="16sp"
+                                android:id="@+id/send_date"
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:text="@string/send_date"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="8dp"
+                                android:padding="6dp"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/colorprimary_text"
+                                android:gravity="right|center_vertical"
+                                android:textSize="16sp"
+                                android:id="@+id/send_datel"
+
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@color/colordivider3"
+                    >
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_content_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colordivider3"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            >
+
+                            <com.github.gcacace.signaturepad.views.SignaturePad
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                app:penColor="@color/colorprimary_text"
+                                app:penMinWidth="4sp"
+                                app:penMaxWidth="8sp"
+                                app:clearOnDoubleClick="true"
+                                android:id="@+id/reciver_signature"
+                                android:background="@color/colorAccent"
+                                />
+
+
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                android:id="@+id/save_signature"
+                                android:layout_below="@+id/reciver_signature"
+                                android:layout_marginTop="20dp"
+                                app:srcCompat="@drawable/ic_save_black_24dp"
+                                android:tint="@color/colorprimary_text"
+                                android:padding="16dp"
+                                android:background="?selectableItemBackgroundBorderless"
+                                android:clickable="true"
+
+
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+                    </FrameLayout>
+
+                    ​
+                    <FrameLayout
+                        android:id="@+id/cell_title_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="@string/receiver_signature"
+                            android:gravity="center"
+                            android:background="@color/colordivider3"
+                            />
+                    </FrameLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBar"
+        style="@style/SpinKitView.ThreeBounce"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:SpinKit_Color="@color/colordivider" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+
+    </style>
+
+    <style name="login_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorprimary_text</item>
+        <item name="android:textColorHint">@color/colorsecondary_text</item>
+        <item name="android:paddingStart">38dp</item>
+        <item name="android:paddingBottom">16dp</item>
+
+    </style>
+
+    <style name="login_icon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:tint">@color/colorprimary_text</item>
+    </style>
+  <style name="logout_icon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:tint">@color/colororange</item>
+    </style>
+  <style name="save_edit_icon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:tint">@color/colorgreen</item>
+    </style>
+
+    <style name="login_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorprimary_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="send_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/colorprimary_text</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+</resources>
